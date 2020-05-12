@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http'
 })
 export class MoviesService {
 
-  private apiKey = '918ff079c7eef0842231f1f5063c9816'
+  private apiKey = ''
   private urlTmdb = 'https://api.themoviedb.org/3'
 
   movies: any[] = []
