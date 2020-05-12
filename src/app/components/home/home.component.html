@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">MoviesApp</h1>
+      <p class="lead">Tu app de cine y series</p>
+    </div>
+  </div>
+  <br />
+
+  <app-galery 
+    [movies]="popular|slice:0:6" 
+    title= 'Películas populares'
+  ></app-galery>
+
+  <app-galery 
+    [movies]="kids|slice:0:6" 
+    title= 'Películas de ciencia ficción'
+  ></app-galery>
+
+  <app-galery 
+    [movies]="best19|slice:0:6" 
+    title= 'Las mejores de 2019'
+  ></app-galery>
+
+</div>
